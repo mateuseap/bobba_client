@@ -29,6 +29,6 @@ jobs:
       - name: Build & Deploy
         run: |
           cd front-end
-          npm install
+          npm install --legacy-peer-deps --force
           npm run build
           npm run deploy
